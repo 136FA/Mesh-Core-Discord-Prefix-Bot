@@ -7,7 +7,7 @@ A Discord bot for tracking MeshCore repeater public key prefixes across a mesh n
 ### 1. Clone and install
 
 ```bash
-git clone (https://github.com/136FA/Mesh-Core-Discord-Prefix-Bot)
+git clone https://github.com/136FA/Mesh-Core-Discord-Prefix-Bot
 cd Mesh-Core-Discord-Prefix-Bot
 python3 -m venv botenv
 source botenv/bin/activate
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 python3 bot.py
 ```
 
-On first run, `prefixes.json` is created automatically seeded with the current node list.
+On first run, `prefixes.json` is created automatically. Use `/prefix-add` to start adding nodes.
 
 ---
 
@@ -47,8 +47,8 @@ After=network.target
 
 [Service]
 User=YOUR_LINUX_USERNAME
-WorkingDirectory=/home/YOUR_LINUX_USERNAME/meshcore-prefix-bot
-ExecStart=/home/YOUR_LINUX_USERNAME/meshcore-prefix-bot/botenv/bin/python3 bot.py
+WorkingDirectory=/home/YOUR_LINUX_USERNAME/Mesh-Core-Discord-Prefix-Bot
+ExecStart=/home/YOUR_LINUX_USERNAME/Mesh-Core-Discord-Prefix-Bot/botenv/bin/python3 bot.py
 Restart=always
 RestartSec=5
 
@@ -63,6 +63,7 @@ sudo systemctl start meshbot
 ```
 
 Useful commands:
+
 ```bash
 sudo systemctl status meshbot       # check status
 sudo systemctl restart meshbot      # restart after updating bot.py
