@@ -7,8 +7,8 @@ A Discord bot for tracking MeshCore repeater public key prefixes across a mesh n
 ### 1. Clone and install
 
 ```bash
-git clone <your-repo-url>
-cd meshcore-prefix-bot
+git clone [<your-repo-url>](https://github.com/136FA/Mesh-Core-Discord-Prefix-Bot)
+cd Mesh-Core-Discord-Prefix-Bot
 python3 -m venv botenv
 source botenv/bin/activate
 pip install -r requirements.txt
