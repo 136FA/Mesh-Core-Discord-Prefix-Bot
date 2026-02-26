@@ -1,0 +1,21 @@
+# Bot token / sensitive config
+config.py
+.env
+
+# Runtime data
+prefixes.json
+
+# Virtualenv
+botenv/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor junk
+.vscode/
+.idea/
+*.swp
